@@ -20,7 +20,7 @@ struct DetailsView: View {
 
     var body: some View {
         ZStack {
-            Color.gray.opacity(0.12).ignoresSafeArea()
+            Color.white.opacity(0.12).ignoresSafeArea()
 
             ScrollView {
                 VStack(spacing: 16) {
@@ -39,11 +39,12 @@ struct DetailsView: View {
                             .font(.largeTitle.bold())
                             .foregroundColor(.primary)
                             .padding(.bottom)
+                        
 
                         HStack(alignment: .firstTextBaseline) {
                             Text(secilenKahraman.rolü).font(.title2).foregroundStyle(.secondary)
                             Spacer()
-                            Text(secilenKahraman.city).font(.title3).foregroundStyle(.purple)
+                            Text(secilenKahraman.city).font(.title3).foregroundStyle(.red)
                         }
                     }
                     .padding(.horizontal)
